@@ -1,5 +1,5 @@
 // this is the first program i uploaded in the Github repsitory.
-//references:  I used come advanced c++ STL concepts. I am including the references i used while learning about these features
+//references:  I used some advanced c++ STL concepts. I am including the references i used while learning about these features
 //            (1) concept of iterators: https://www.geeksforgeeks.org/introduction-iterators-c/
 //            (2) other refrence book i used for syntax and other advanced features : sam teach yourself series on C++ (Beautiful book for beginners in c++)
 
