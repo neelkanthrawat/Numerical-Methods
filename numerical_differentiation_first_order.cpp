@@ -50,10 +50,6 @@ public:
     float two_point_central_diff_first_deri()//
     {
         float ans_derivative = (func_of_interest(xval_in + step_size) - func_of_interest(xval_in - step_size)) / ((float)2 * step_size);// (f(xval_in+h)-f(xval_in-h))/(2h)
-     /*std::cout << "func_of_interest(xval_in + step_size_in)" << func_of_interest(xval_in + step_size_in) << std::endl;
-     //std::cout << "func_of_interest(xval_in - step_size_in)" << func_of_interest(xval_in - step_size_in) << std::endl;
-     //std::cout << "2*step_size_in" << ((float)2 * step_size_in) << std::endl;
-     */
         return ans_derivative;
     }
 };
