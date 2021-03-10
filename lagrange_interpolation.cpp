@@ -58,7 +58,7 @@ int main()
     dyn_yin.pop_back();//temporary solution to get rid of extra row. I am yet to figure out why is this happening
     // code for reading file ends here
 
-    float point_of_interest = 480;//valjue at which i want to evaluate the value of interpolating polynomial
+    float point_of_interest = 480;//x value at which i want to evaluate the interpolating polynomial
     lagrange_poly(point_of_interest, dyn_xin, dyn_yin);
     return 0;
 }
