@@ -33,23 +33,12 @@ float lagrange_poly(float xin, const std::vector <float> &pbref_xdata, const std
     return poly_sum; 
 }
 
-/*
-// function passing a vector to a function // passing a dynamic vector to function
-void vector_to_fn(const std::vector <float> &vec_pbref )//pbref is short for pass by reference
-{
-    for (int i = 0; i < vec_pbref.size();++i)
-    {
-        std::cout << "dyn_xin[" << i << "] = " << vec_pbref[i];
-    }
-}
-*/
-
 int main()
 {
     std::cout << "Hello World!\n";
     std::vector <float> dyn_xin{} ;//vector of floats x input values
     std::vector <float> dyn_yin{ };// vector of floats y input values
-
+    
     //code for reading file begins from here
     std::ifstream read_file("data_file_thermo.dat" , std::ios_base::in);//defining the input stream variable.
     assert(read_file.is_open());//checking whether the file can be opened for the required purpose or not
