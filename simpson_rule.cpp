@@ -3,17 +3,17 @@
 //             (2) A friendly introduction to numerical analysis by brian bradie
 //             (3) Numerical methods for scientific and engineering computations - jain, iyenger, jain
 
-# define _USE_MATH_DEFINES // allows me touse constant M_PI defined in cmath.
+# define _USE_MATH_DEFINES // allows me to use constant M_PI defined in cmath.
 #include <iostream>
 #include<string.h>
 #include<math.h>
 #include<cmath>
 
-double func1_to_integrate(double xin)//function i want to
+double func1_to_integrate(double xin)//integrand function 
 {
     return 1 / (2 + (xin * xin));
 }
-double func2_to_integrate(double xinput)
+double func2_to_integrate(double xinput)// another integrand function
 {   
     //return sin(xinput);
     return exp(-xinput);
