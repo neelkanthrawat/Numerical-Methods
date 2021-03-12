@@ -24,15 +24,15 @@ double func2_to_integrate(double xinput)// another integrand function
 double simpson(int num_intervals, double lower_lt, double upper_lt, double (*func) (double))
 {   
     std::cout << "i am inside the function" << std::endl;
-    double step_size = ((double)upper_lt - (double)lower_lt) / (double)(num_intervals);
+    double step_size = (upper_lt - lower_lt) / (double)(num_intervals);
     std::cout << "step_size is = " <<step_size<< std::endl;
     double temp_sum_odd_ordinates = 0;
     std::cout << "initialised sum of odd ordinates is = " << temp_sum_odd_ordinates << std::endl;
     for (int j = 1; j <=(num_intervals/2); ++j)// note <=(num_interval/2)!
     {   
         std::cout << "evaluating sum of odd ordinates. j is = " <<j<< std::endl;
-        std::cout << "odd ordinate evaluation : " << func((double)lower_lt + ((double)2 * j - 1) * step_size) << std::endl;
-        temp_sum_odd_ordinates = temp_sum_odd_ordinates + func((double)lower_lt + ((double)2*j-1) * step_size);
+        std::cout << "odd ordinate evaluation : " << func(lower_lt + ((double)2 * j - 1) * step_size) << std::endl;
+        temp_sum_odd_ordinates = temp_sum_odd_ordinates + func(lower_lt + ((double)2*j-1) * step_size);
         std::cout << "evaluating sum of odd ordinates. j is = " << j << std::endl;
     }
     
@@ -40,7 +40,7 @@ double simpson(int num_intervals, double lower_lt, double upper_lt, double (*fun
     for (int j = 1; j <=(num_intervals / 2) - 1; ++j)// note <=(num_interval/2)-1!
     {
         std::cout << "evaluating sum of even ordinates. j is = " << j << std::endl;
-        temp_sum_even_ordinates = temp_sum_even_ordinates + func((double)lower_lt + ((double)2*j) * step_size);
+        temp_sum_even_ordinates = temp_sum_even_ordinates + func(lower_lt + ((double)2*j) * step_size);
 
     }
     double final_result = 0;
