@@ -22,7 +22,7 @@ double trapezoidal(int num_intervals, float lower_lt, float upper_lt, double (*f
 {
     double step_size = ((double)upper_lt - (double)lower_lt) / (double)(num_intervals);
     double temp_sum = 0;
-    for (int j = 1; j < num_intervals - 1; ++j)
+    for (int j = 1; j <= num_intervals - 1; ++j)
     {
         temp_sum = temp_sum + func((double)lower_lt + j * step_size);
 
