@@ -28,7 +28,7 @@ double trapezoidal(int num_intervals, float lower_lt, float upper_lt, double (*f
 
     }
     double final_result = 0;
-    final_result = (step_size / 2) * (func(lower_lt) + func(lower_lt) + 2 * temp_sum);
+    final_result = (step_size / 2) * (func(lower_lt) + func(upper_lt) + 2 * temp_sum);
     return final_result;
 }
 
