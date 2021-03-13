@@ -58,7 +58,7 @@ public:
 
 int main()
 {
-    std::cout << "Hello World! This program is to numericall evaluate the derivative of the function at the desired point using desired stepsize \n";
+    std::cout << "Hello World! This program is to numerically evaluate the derivative of the function at the desired point using desired stepsize \n";
     std::cout << "enter the x value at which you want to evaluate the derivative of the function " << std::endl;
     float xin = 0;
     std::cin >> xin;
