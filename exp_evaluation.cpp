@@ -1,5 +1,5 @@
 // exp_evaluation.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+// This was HW assignment
 
 #include <iostream>
 #include <math.h>
