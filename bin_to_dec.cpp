@@ -87,7 +87,7 @@ int main()
     // i am getting input as a string because that is more convenient for the user. 
     string binary_number;
     cout << "This program converts a positive binary number into decimal" << endl;
-    cout << "Examples of type of binary numbers to their decimal equivalent is: (e.g.1) 1101 (e.g.2) 1101.110011" << endl;
+    cout << "Examples of type of binary numbers this program can convert to their decimal equivalent is: (e.g.1) 1101 (e.g.2) 1101.110011" << endl;
     cout << "enter the binary number : ";
     cin >> binary_number;
     binary_to_decimal(binary_number);//invoking function which converts a positive binary number to its decimal equivalent
