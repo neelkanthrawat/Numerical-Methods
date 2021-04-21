@@ -8,7 +8,6 @@
 #include <vector>
 #include<iterator>// for iterator : new thing that i learned today
 //#include <algorithm>
-// during my free time i would love to leisurely learn about these libraries in great detail
 using namespace std;
 
 void binary_to_decimal(string binary_num) // need to copy the program written in the main function to this function.
