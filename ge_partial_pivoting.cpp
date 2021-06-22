@@ -28,7 +28,7 @@ void gepp(double(&inp_mat)[rows][cols], double(&output_pivoted)[rows][cols])// g
     {
         int old_max_row_index = ctr_outmost;
         int temp_max_row_index = ctr_outmost;
-        int temp_max_col_index = ctr_outmost;// technically i don't need it. but it is better to have this for the sake of avoiding confusion
+        int temp_max_col_index = ctr_outmost;// technically i don't need it but for the time being let's keep it for the sake of avoiding confusion
         double temp_max_val = output_pivoted[temp_max_row_index][temp_max_col_index];
         for (int index_below = (temp_max_row_index+1); index_below < rows; ++index_below)
         {
