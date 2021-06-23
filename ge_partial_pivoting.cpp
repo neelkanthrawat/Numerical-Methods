@@ -1,5 +1,5 @@
 // this is just a program for gaussian elimination using partial pivoting
-
+//Method based on template discussed in this page meets our requirement: https://stackoverflow.com/questions/8767166/passing-a-2d-array-to-a-c-function
 #include <iostream>
 #include <cmath>// std::abs()
 #include<iomanip>//std::setw, std::setprecision
